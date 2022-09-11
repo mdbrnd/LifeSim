@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "flVxajkHCRDTukTkeHUUIm8JFd2+y1Qmn0x/wl5/AAQdaYkEEcoGN1AdoHfvBeXifQHAXPcuBuJ+QoCE9NwJdQ==",
+  "success": true,
+  "projectFilePath": "C:\\Coding\\VS22 Programs\\LifeSim\\LifeSim\\LifeSim.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MB\\.nuget\\packages\\raylib-cs\\4.0.0.2\\raylib-cs.4.0.0.2.nupkg.sha512",
+    "C:\\Users\\MB\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
