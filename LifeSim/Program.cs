@@ -24,8 +24,8 @@ Random rand = new Random();
 
 List<List<Atom>> allAtoms = new List<List<Atom>>();
 
-List<Atom> yellowAtoms = Atom.Create(200, 5, YELLOW);
-List<Atom> redAtoms = Atom.Create(200, 5, RED);
+List<Atom> yellowAtoms = Atom.Create(1000, 5, YELLOW);
+List<Atom> redAtoms = Atom.Create(250, 5, RED);
 List<Atom> greenAtoms = Atom.Create(200, 5, GREEN);
 //redAtoms.Add(new Atom(screenHeight / 2, screenWidth / 2, 5, RED));
 
@@ -106,10 +106,16 @@ while (!WindowShouldClose())  // Detect window close button or ESC key
 
     if (!pause)
     {
-        Interact(ref redAtoms, ref redAtoms, -1);
+        Interact(ref greenAtoms, ref greenAtoms, -0.32);
+        Interact(ref redAtoms, ref redAtoms, -0.10);
+        Interact(ref greenAtoms, ref yellowAtoms, 0.34);
+        Interact(ref redAtoms, ref greenAtoms, -0.34);
+        Interact(ref yellowAtoms, ref yellowAtoms, 0.15);
+        Interact(ref yellowAtoms, ref greenAtoms, -0.20);
 
-        Interact(ref redAtoms, ref yellowAtoms, 0.3);
-        Interact(ref yellowAtoms, ref redAtoms, 0.3);
+        //Interact(ref redAtoms, ref redAtoms, -1);
+        //Interact(ref redAtoms, ref yellowAtoms, 0.3);
+        //Interact(ref yellowAtoms, ref redAtoms, 0.3);
     }
     else
     {
